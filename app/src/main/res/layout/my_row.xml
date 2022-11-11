@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvEpisodeTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="41dp"
+                android:text="tvEpisodeTitle"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                app:layout_constraintBottom_toTopOf="@+id/tvEpisodeDescription2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnRandom2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <Button
+                android:id="@+id/btnRandom2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Make me Work!"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvEpisodeTitle2"
+                app:layout_constraintStart_toEndOf="@+id/imgEpisode2"
+                app:layout_constraintTop_toBottomOf="@+id/rbEpisode2" />
+
+            <RatingBar
+                android:id="@+id/rbEpisode2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="11dp"
+                android:contentDescription="@string/app_name"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize=".5"
+                app:layout_constraintBottom_toTopOf="@+id/btnRandom2"
+                app:layout_constraintStart_toEndOf="@+id/imgEpisode2"
+                app:layout_constraintTop_toBottomOf="@+id/tvEpisodeDescription2" />
+
+            <TextView
+                android:id="@+id/tvEpisodeDescription2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="tvEpisodeDescription"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                app:layout_constraintBottom_toTopOf="@+id/rbEpisode2"
+                app:layout_constraintStart_toStartOf="@+id/tvEpisodeTitle2"
+                app:layout_constraintTop_toBottomOf="@+id/tvEpisodeTitle2" />
+
+            <ImageView
+                android:id="@+id/imgEpisode2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="top|bottom"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:src="@drawable/livelong_prosper"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnRandom2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/livelong_prosper" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
